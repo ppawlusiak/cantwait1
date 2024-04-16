@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AddPage extends StatefulWidget {
   const AddPage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<AddPage> createState() => _AddPageState();
@@ -69,12 +69,11 @@ class _AddPageState extends State<AddPage> {
 
 class _AddPageBody extends StatelessWidget {
   const _AddPageBody({
-    Key? key,
     required this.onTitleChanged,
     required this.onImageUrlChanged,
     required this.onDateChanged,
     this.selectedDateFormatted,
-  }) : super(key: key);
+  });
 
   final Function(String) onTitleChanged;
   final Function(String) onImageUrlChanged;

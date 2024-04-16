@@ -6,13 +6,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.blue[800],
         title: const Text('Can\'t Wait 🤩'),
       ),
       body: const _HomePageBody(),
@@ -32,9 +34,7 @@ class HomePage extends StatelessWidget {
 }
 
 class _HomePageBody extends StatelessWidget {
-  const _HomePageBody({
-    Key? key,
-  }) : super(key: key);
+  const _HomePageBody();
 
   @override
   Widget build(BuildContext context) {
@@ -89,9 +89,8 @@ class _HomePageBody extends StatelessWidget {
 
 class _ListViewItem extends StatelessWidget {
   const _ListViewItem({
-    Key? key,
     required this.document,
-  }) : super(key: key);
+  });
 
   final QueryDocumentSnapshot<Map<String, dynamic>> document;
 
@@ -152,8 +151,8 @@ class _ListViewItem extends StatelessWidget {
                   ),
                   margin: const EdgeInsets.all(10),
                   padding: const EdgeInsets.all(10),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         '0',
                         style: TextStyle(

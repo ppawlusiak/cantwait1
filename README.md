@@ -27,7 +27,7 @@ To run it please:
 
 ## Change App ID:
 
-Find and replace any occurance of `com.piotrpawlusiak` to `com.yourcompanyname`
+Find and replace any occurance of `com.example` to `com.yourcompanyname`
 
 ## Configure Firebase in your system:
 

@@ -8,7 +8,7 @@
 PRODUCT_NAME = cantwait1
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.cantwait1
+PRODUCT_BUNDLE_IDENTIFIER = com.piotrpawlusiak.cantwait1
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 com.piotrpawlusiak. All rights reserved.
