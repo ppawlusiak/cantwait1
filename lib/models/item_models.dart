@@ -14,4 +14,7 @@ class ItemModel {
   final DateTime releaseDate;
 
   //methods
+  String daysLeft() {
+    return releaseDate.difference(DateTime.now()).inDays.toString();
+  }
 }
