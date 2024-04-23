@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class ItemModel {
   //constructors
   ItemModel({
@@ -16,5 +18,9 @@ class ItemModel {
   //methods
   String daysLeft() {
     return releaseDate.difference(DateTime.now()).inDays.toString();
+  }
+
+  String releaseDateFormatted() {
+    return DateFormat.yMMMEd().format(releaseDate);
   }
 }
