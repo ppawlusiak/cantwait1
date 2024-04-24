@@ -6,18 +6,25 @@ class UserProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ProfileScreen(
-      providers: [
-        EmailAuthProvider(),
-      ],
-      actions: [
-        SignedOutAction(
-          (context) {
-            Navigator.of(context).pop();
-          },
-        ),
-      ],
-      avatarSize: 24,
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.blue[800],
+        title: const Text('Can\'t Wait 🤩'),
+      ),
+      body: ProfileScreen(
+        providers: [
+          EmailAuthProvider(),
+        ],
+        actions: [
+          SignedOutAction(
+            (context) {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+        avatarSize: 24,
+      ),
     );
   }
 }
