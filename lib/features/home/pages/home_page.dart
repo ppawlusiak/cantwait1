@@ -1,4 +1,5 @@
 import 'package:cantwait1/features/add/page/add_page.dart';
+import 'package:cantwait1/features/auth/pages/user_profile.dart';
 import 'package:cantwait1/features/details/pages/details_page.dart';
 import 'package:cantwait1/features/home/cubit/home_cubit.dart';
 import 'package:cantwait1/models/item_models.dart';
@@ -18,6 +19,18 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[800],
         title: const Text('Can\'t Wait 🤩'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const UserProfile(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.person),
+          ),
+        ],
       ),
       body: const _HomePageBody(),
       floatingActionButton: FloatingActionButton(
