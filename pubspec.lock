@@ -210,7 +210,7 @@ packages:
     source: hosted
     version: "1.10.2"
   firebase_ui_oauth:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: firebase_ui_oauth
       sha256: "00003a7ff0b75b081ed9815bad732343e3702d6237f90f1b63b623ba5e8d1410"
@@ -252,7 +252,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_svg:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_svg
       sha256: "7b4ca6cf3304575fe9c8ec64813c8d02ee41d2afe60bcfe0678bcb5375d596a2"

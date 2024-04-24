@@ -1,6 +1,6 @@
 # cantwait1
 
-A new Flutter project.
+### This project is coping from github site: https://github.com/adamsmaka/cantwait28
 
 ## Getting Started
 
